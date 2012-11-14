@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '5.0'
 
   s.source_files = 'BRNetworking/BRNetworking/*.h','BRNetworking/BRNetworking/BRCache/*.{h,m}','BRNetworking/BRNetworking/Singleton/*.{h,m}','BRNetworking/BRNetworking/ThirdParty/Apple/*.{h,m}','BRNetworking/BRNetworking/BRNetworking/*.{h,m}','BRNetworking/BRNetworking/BRNetworking/Apple/*.{h,m}','BRNetworking/BRNetworking/BRNetworking/Authentication/*.{h,m}','BRNetworking/BRNetworking/BRNetworking/Callbacks/*.{h,m}'
-  s.frameworks = 'Foundation', 'SystemConfiguration'
+  s.frameworks = 'Foundation', 'SystemConfiguration', 'CoreGraphics', 'ImageIO'
   s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__
 	#import <Foundation/Foundation.h>
